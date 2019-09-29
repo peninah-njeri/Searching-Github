@@ -8,11 +8,14 @@ import { HttpClient } from '@angular/common/http';
 export class GithubApiService {
 
   key = environment.apiKey;
-  url = "https://api.github.com/users/";
+  url = "https://api.github.com/";
 
   constructor(private http: HttpClient) { }
 
   getUser(username){
-   return this.http.get(`${this.url}${username}?access_token=${this.key}`).toPromise()
+   return this.http.get(`${this.url}users/${username}?access_token=${this.key}`).toPromise()
   }
+  getUserRepos(username){
+    return this.http.get(`${this.url}users/${username}/repos?access_token=${this.key}`).toPromise()
+   }
 }

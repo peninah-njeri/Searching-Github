@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
       this.user = user
       console.log(user);
     })
-  }
+
 
 
 
