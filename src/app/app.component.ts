@@ -1,6 +1,7 @@
 import { User } from './classes/user';
 import { GithubApiService } from './services/github-api.service';
 import { Component, OnInit } from '@angular/core';
+import { Repo } from './classes/repo';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   username = "peninah-njeri";
   user: User;
+  repos : Repo[];
   constructor(private github: GithubApiService){
 
   }
@@ -20,6 +22,9 @@ export class AppComponent implements OnInit {
       console.log(user);
     })
 
+    this.github.getUserRepos(this.username)
+    .then((repos : Repo[]) => this.repos = repos);
+  }
 
 
 
