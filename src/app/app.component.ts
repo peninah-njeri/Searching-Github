@@ -16,16 +16,24 @@ export class AppComponent implements OnInit {
 
   }
   ngOnInit(){
-    this.github.getUser(this.username)
-    .then((user:User) => {
-      this.user = user
-      console.log(user);
-    })
+   this.getUser();
+   this.getRepos();
+  }
 
+  formSubmit(value){
+    this.username = value.username;
+    this.getUser();
+    this.getRepos();
+  }
+
+  getUser(){
+    this.github.getUser(this.username)
+    .then((user:User) =>  this.user = user )
+  }
+
+  getRepos(){
     this.github.getUserRepos(this.username)
     .then((repos : Repo[]) => this.repos = repos);
   }
-
-
 
 }
