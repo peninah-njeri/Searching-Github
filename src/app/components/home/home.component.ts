@@ -11,28 +11,21 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   username = "peninah-njeri";
   user: User;
-  repos : Repo[];
-  
+
   constructor( private github : GithubApiService) { }
 
   ngOnInit() {
     this.getUser();
-    this.getRepos();
   }
 
   receiveUsername(username){
     this.username = username;
     this.getUser();
-    this.getRepos();
   }
   getUser(){
     this.github.getUser(this.username)
     .then((user:User) =>  this.user = user )
   }
 
-  getRepos(){
-    this.github.getUserRepos(this.username)
-    .then((repos : Repo[]) => this.repos = repos);
-  }
 
 }
