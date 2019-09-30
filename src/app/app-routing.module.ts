@@ -1,11 +1,13 @@
 import { HomeComponent } from './components/home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { RepoComponent } from './components/repo/repo.component';
 
 
 const routes: Routes = [
-  { path: 'home', component : HomeComponent},
-  { path: '', redirectTo : 'home', pathMatch:'full'}
+  { path: 'home', component : HomeComponent },
+  { path : 'repo', component : RepoComponent },
+  { path: '', redirectTo : 'home', pathMatch:'full' }
 ];
 
 @NgModule({

@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./repo.component.css']
 })
 export class RepoComponent implements OnInit {
-
+  username;
   constructor() { }
 
   ngOnInit() {
+    this.username = history.state.data;
   }
 
 }
