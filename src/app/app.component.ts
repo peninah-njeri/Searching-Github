@@ -9,31 +9,14 @@ import { Repo } from './classes/repo';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  username = "peninah-njeri";
-  user: User;
-  repos : Repo[];
-  constructor(private github: GithubApiService){
+
+  constructor(){
 
   }
   ngOnInit(){
-   this.getUser();
-   this.getRepos();
+
   }
 
-  formSubmit(value){
-    this.username = value.username;
-    this.getUser();
-    this.getRepos();
-  }
 
-  getUser(){
-    this.github.getUser(this.username)
-    .then((user:User) =>  this.user = user )
-  }
-
-  getRepos(){
-    this.github.getUserRepos(this.username)
-    .then((repos : Repo[]) => this.repos = repos);
-  }
-
+  
 }
