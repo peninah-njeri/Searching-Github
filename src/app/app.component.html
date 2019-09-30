@@ -1,16 +1,4 @@
 <div class="container">
   <router-outlet></router-outlet>
- 
-  <!-- Repos -->
-  <h4 class="text-center">Repositories</h4>
-  <div class="card w-75 m-auto" *ngFor="let repo of repos; let i = index;">
-    <div class="card-header">
-     {{i+1}}. {{repo.name}}
-    </div>
-    <div class="card-body">
-      <p class="card-text">Description: {{repo.description}}</p>
-      <p> Language: {{repo.language}}</p>
-    </div>
-  </div>
 </div>
 
