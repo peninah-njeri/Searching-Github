@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { FormComponent } from './components/form/form.component';
 import { HomeComponent } from './components/home/home.component';
 import { RepoComponent } from './components/repo/repo.component';
+// import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
     HomeComponent,
-    RepoComponent
+    RepoComponent,
+    
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,7 @@
             <p class="card-text">{{user.bio}}</p>
             <p class="card-text">Followers: {{user.followers}}</p>
             <p class="card-text">Public Repositories: {{user.public_repos}}</p>
+           
         </div>
         <a class="btn btn-primary" routerLink ='/repo' [state]= "{data : {'username':username}}" routerLinkActive = 'active'>Repositories</a>
         </div>
