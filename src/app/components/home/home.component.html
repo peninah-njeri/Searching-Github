@@ -1,3 +1,5 @@
+<div class="container">
+        <ng-progress></ng-progress>  
 <app-form (query) ="receiveUsername($event)"></app-form>
 <div class="card mb-3 my-4 mx-auto" style="max-width: 400px;" *ngIf="user">
     <div class="row no-gutters">
@@ -15,4 +17,5 @@
         <a class="btn btn-primary" routerLink ='/repo' [state]= "{data : {'username':username}}" routerLinkActive = 'active'>Repositories</a>
         </div>
     </div>
+</div>
 </div>

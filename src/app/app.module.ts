@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { FormComponent } from './components/form/form.component';
 import { HomeComponent } from './components/home/home.component';
 import { RepoComponent } from './components/repo/repo.component';
+import { NgProgressModule } from '@ngx-progressbar/core';
+import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
 // import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
@@ -22,7 +24,9 @@ import { RepoComponent } from './components/repo/repo.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgProgressModule.forRoot(),
+    NgProgressHttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
