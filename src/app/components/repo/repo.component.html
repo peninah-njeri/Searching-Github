@@ -1,3 +1,4 @@
+<a routerLink='/home' class="btn btn-primary">Home</a>
 <h4 class="text-center">Repositories</h4>
 <div class="card w-75 m-auto" *ngFor="let repo of repos; let i = index;">
   <div class="card-header">
@@ -6,5 +7,5 @@
   <div class="card-body">
     <p class="card-text">Description: {{repo.description}}</p>
     <p> Language: {{repo.language}}</p>
-  </div>
+  </div> this.getRepos();
 </div>
