@@ -27,12 +27,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * Bootstrap
 ## BDD
  
- | Input        | Behaviour        | Output  |
+| Input       | Behaviour          | Output  |
 | ------------- |:-------------:| -----:|
-| On the search bar      | Search github account using your username |Display the users profile such as bio, Avatar,repositories, followers and following
-   |
-|   On the profile, click repositories button  |  This opens a new page named repositories    |  A list of all ropositories is displayed.  |
-| click the button labelled Home | This takes you back to the home page     |  Search another github repository using the same method provided  |
+| On the search bar       | Search github account using your username  | Display the users profile such as bio, Avatar,repositories, followers and following|
+| On the profile, click repositories button      | This opens a new page named repositories    | A list of all ropositories is displayed.   |
+| click the button labelled Home | This takes you back to the home page      |    Search another github repository using the same method provided |
 
 
 ## Live link
