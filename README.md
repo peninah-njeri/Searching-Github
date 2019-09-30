@@ -30,9 +30,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
  |Input            |  Behaviour             |       Output       |
 | :----------------------:|:---------------:|:------------:|
 |On the search bar   | Search github account using your username |Display the users profile such as bio, Avatar,repositories, followers and following
-
+ |Input            |  Behaviour             |       Output       |
+| :----------------------:|:---------------:|:------------:|
 |On the profile, click repositories button| This opens a new page named repositories| A list of all ropositories is displayed.
-
+ |Input            |  Behaviour             |       Output       |
+| :----------------------:|:---------------:|:------------:|
 |click the button labelled Home| This takes you back to the home page| Search another github repository using the same method provided
 
 ## Live link
